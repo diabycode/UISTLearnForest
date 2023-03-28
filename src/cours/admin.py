@@ -18,10 +18,10 @@ class SectionAdmin(admin.ModelAdmin):
 # add Video to admin panel
 @admin.register(Video)
 class VideoAdmin(admin.ModelAdmin):
-    list_display = ('video_source', 'description')
+    list_display = ('title', 'video_source', 'description')
 
 
 # add Article to admin panel
 @admin.register(Article)
 class ArticleAdmin(admin.ModelAdmin):
-    list_display = ('content',)
+    list_display = ('title', 'content',)
