@@ -1,3 +1,7 @@
+# env vars
+env_vars.json
+.vscode/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

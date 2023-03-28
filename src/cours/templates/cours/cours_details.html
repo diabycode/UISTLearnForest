@@ -1,0 +1,117 @@
+
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block head %}
+    <title>{{ cours.title }}</title>
+    <link rel="stylesheet" href="{% static 'css/cours/cours_list_style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/cours/reset.css' %}">
+    <link rel="stylesheet" href="{% static 'css/cours/cours_details_style.css' %}">
+
+{% endblock %}
+
+{% block body %}
+    <header>
+        <div class="title-bar">
+            <div class="social">
+                <a href="#">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M22.46 6C21.69 6.35 20.86 6.58 20 6.69C20.88 6.16 21.56 5.32 21.88 4.31C21.05 4.81 20.13 5.16 19.16 5.36C18.37 4.5 17.26 4 16 4C13.65 4 11.73 5.92 11.73 8.29C11.73 8.63 11.77 8.96 11.84 9.27C8.28001 9.09 5.11001 7.38 3.00001 4.79C2.63001 5.42 2.42001 6.16 2.42001 6.94C2.42001 8.43 3.17001 9.75 4.33001 10.5C3.62001 10.5 2.96001 10.3 2.38001 10V10.03C2.38001 12.11 3.86001 13.85 5.82001 14.24C5.19074 14.4122 4.5301 14.4362 3.89001 14.31C4.16162 15.1625 4.69355 15.9084 5.41103 16.4429C6.1285 16.9775 6.99546 17.2737 7.89001 17.29C6.37364 18.4904 4.494 19.1393 2.56001 19.13C2.22001 19.13 1.88001 19.11 1.54001 19.07C3.44001 20.29 5.70001 21 8.12001 21C16 21 20.33 14.46 20.33 8.79C20.33 8.6 20.33 8.42 20.32 8.23C21.16 7.63 21.88 6.87 22.46 6Z" fill="black"/>
+                    </svg>
+                </a>
+                <a href="#">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19 3C19.5304 3 20.0391 3.21071 20.4142 3.58579C20.7893 3.96086 21 4.46957 21 5V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V5C3 4.46957 3.21071 3.96086 3.58579 3.58579C3.96086 3.21071 4.46957 3 5 3H19ZM18.5 18.5V13.2C18.5 12.3354 18.1565 11.5062 17.5452 10.8948C16.9338 10.2835 16.1046 9.94 15.24 9.94C14.39 9.94 13.4 10.46 12.92 11.24V10.13H10.13V18.5H12.92V13.57C12.92 12.8 13.54 12.17 14.31 12.17C14.6813 12.17 15.0374 12.3175 15.2999 12.5801C15.5625 12.8426 15.71 13.1987 15.71 13.57V18.5H18.5ZM6.88 8.56C7.32556 8.56 7.75288 8.383 8.06794 8.06794C8.383 7.75288 8.56 7.32556 8.56 6.88C8.56 5.95 7.81 5.19 6.88 5.19C6.43178 5.19 6.00193 5.36805 5.68499 5.68499C5.36805 6.00193 5.19 6.43178 5.19 6.88C5.19 7.81 5.95 8.56 6.88 8.56ZM8.27 18.5V10.13H5.5V18.5H8.27Z" fill="black"/>
+                    </svg>
+                </a>
+                <a href="#">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M22 12C22 6.48 17.52 2 12 2C6.48 2 2 6.48 2 12C2 16.84 5.44 20.87 10 21.8V15H8V12H10V9.5C10 7.57 11.57 6 13.5 6H16V9H14C13.45 9 13 9.45 13 10V12H16V15H13V21.95C18.05 21.45 22 17.19 22 12Z" fill="black"/>
+                    </svg>
+                </a>
+            </div>
+            <div>
+                <a href="{% url 'cours_list' %}">
+                    <h1 class="logo"><span>UIST</span>LEARNFOREST</h1>
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Accueil</a></li>
+                    <li><a href="#">Formation</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- home view -->
+        <div class="home-view">
+            <img src="{{ cours.thumbnail.url }}" alt="{{cours.title}}">
+
+            <div class="home-view-content">
+                <h2>{{ cours.title }}</h2>
+                <p class="short-desc">{{ short_desc }}</p>
+                <a href="{% url 'cours_learn' slug=cours.slug %}"> Démarrer </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <div>
+                <div class="left">
+                    <h3>Détails</h3>
+                    <p>{{ full_desc }}</p>
+    
+                    <div class="infos">
+                        <div>
+                            <h4>{{ cours.author }}</h4>
+                            <p>Depuis le: {{ cours.create_at }}</p>
+                        </div>
+                        <div>
+                            <p>{{ cours.sections.count }} Chapitres</p>
+                            <p>{{ cours.videos_count }} Videos</p>
+                            <p>{{ cours.articles_count }} Articles</p>
+                        </div>  
+                    </div>
+                </div>
+                <div class="right">
+                    <h3>Chapitres</h3>
+                    <div class="cours-sections">
+                        <ul> 
+                            {% for section in cours.section_set.all %}
+                                <li> <span>{{ section.title }}</span> 
+                                    <ul class="section">
+                                        {% for item in section.items %}
+                                            <li class="item">
+                                                <div>
+                                                    {% if item.type == "video" %}
+                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M8 19V5L19 12L8 19Z" fill="#DB2B39"/>
+                                                    </svg>
+                                                    {% else %}
+                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M7 17H14V15H7V17ZM7 13H17V11H7V13ZM7 9H17V7H7V9ZM5 21C4.45 21 3.979 20.804 3.587 20.412C3.195 20.02 2.99934 19.5493 3 19V5C3 4.45 3.196 3.979 3.588 3.587C3.98 3.195 4.45067 2.99934 5 3H19C19.55 3 20.021 3.196 20.413 3.588C20.805 3.98 21.0007 4.45067 21 5V19C21 19.55 20.804 20.021 20.412 20.413C20.02 20.805 19.5493 21.0007 19 21H5Z" fill="#DB2B39"/>
+                                                    </svg>
+                                                        
+                                                    {% endif %}
+                                                    
+                                                </div>
+                                                     
+                                                {{ item.title }} </li>
+                                        {% endfor %}
+                                    </ul>
+                                </li>
+                            {% endfor %}
+                        </ul>
+    
+                    </div>
+    
+    
+                </div>
+            </div>
+
+        </section>
+    </main>
+    
+{% endblock %}
