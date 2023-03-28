@@ -2,7 +2,7 @@
 
 html {
     font-size: 18px;
-    scroll-behavior: smooth !important;
+    scroll-behavior: smooth!important;
 }
 
 *, body {
@@ -14,7 +14,7 @@ html {
     color: #080B0C;
     margin: 0;
     padding: 0;
-    scroll-behavior: smooth !important;
+    scroll-behavior: smooth!important;
 }
 
 body {
