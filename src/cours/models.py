@@ -3,6 +3,7 @@ from django.utils.text import slugify
 from django.contrib.auth import get_user_model
 
 
+
 class Item(models.Model):
     title = models.CharField(max_length=100)
     create_at = models.DateTimeField(auto_now_add=True)
@@ -13,7 +14,6 @@ class Item(models.Model):
 
     class Meta:
         abstract = True
-
 
 
 class Video(Item):
@@ -28,7 +28,6 @@ class Video(Item):
         return 'video'
 
 
-
 class Article(Item):
     content = models.TextField()
 
@@ -38,7 +37,6 @@ class Article(Item):
     @property
     def type(self):
         return 'article'
-
 
 
 class Section(models.Model):
@@ -57,7 +55,6 @@ class Section(models.Model):
         items.sort(key=lambda x: x.create_at, reverse=True)
         return items
         
-
 
 class Cours(models.Model):
     title = models.CharField(max_length=100)

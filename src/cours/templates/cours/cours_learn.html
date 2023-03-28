@@ -84,26 +84,56 @@
                 </div>
                 <div class="right">
                     
-                    <div class="my-player">
-                        <iframe src="https://www.youtube.com/embed/SUC3CJzGgiA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                    </div>
-    
-                    <div class="infos">
-                        <div>
-                            <h3>A propos</h3>
-                            <p>{{ cours.description }}</p>
+                    <div class="content">
+                        <div class="my-player">
+                            <iframe src="https://www.youtube.com/embed/SUC3CJzGgiA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                         </div>
-                        <div>
-                            <p>{{ cours.sections.count }} Chapitres</p>
-                            <p>{{ cours.videos_count }} Videos</p>
-                            <p>{{ cours.articles_count }} Articles</p>
-                        </div>  
+        
+                        <div class="infos">
+                            <div>
+                                <h3>A propos</h3>
+                                <p>{{ cours.description|safe|linebreaksbr }}</p>
+                            </div>
+                            <div>
+                                <p>{{ cours.sections.count }} Chapitres</p>
+                                <p>{{ cours.videos_count }} Videos</p>
+                                <p>{{ cours.articles_count }} Articles</p>
+                            </div>  
+                        </div>
                     </div>
                 </div>
             </div>
 
         </section>
     </main>
+
+
+    <!-- templates --------------- -->
+
+    <!-- video player template -->
+    <template id="video-player-template">
+        <div class="my-player">
+            <!-- <iframe src="https://www.youtube.com/embed/SUC3CJzGgiA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+        </div>
+
+        <div class="infos">
+            <div>
+                <h3>Title about the cours</h3>
+                <p> Cours description</p>
+            </div>
+        </div>
+
+    </template>
+
+    <!-- Article template -->
+    <template id="article-template">
+        <h3>article title</h3>
+        <div>
+            article content
+        </div>
+
+    </template>
+
 
     <script src="{% static 'js/cours/cours_learn.js' %}" type="module"></script>
 
