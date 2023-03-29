@@ -29,6 +29,7 @@ items.forEach(element => {
                     // add video player to the right
                     document.querySelector(".right .content").innerHTML = ""
                     document.querySelector(".right .content").appendChild(videoTemplate)
+                    window.scrollTo(0, 0)
                     
                 } else {
                     // get article template
@@ -39,6 +40,8 @@ items.forEach(element => {
                     // add article to the right
                     document.querySelector(".right .content").innerHTML = ""
                     document.querySelector(".right .content").appendChild(articleTemplate)
+                    window.scrollTo(0, 0)
+
                 }
             })
 

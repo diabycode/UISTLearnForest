@@ -15,6 +15,10 @@ header {
     margin-top: 0;
     position: relative;
     max-height: 395px;
+    min-height: 395px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .home-view > img {
     opacity: 0.15;
@@ -28,15 +32,16 @@ header {
     top: 50%;
     left: 0;
     transform: translateY(-50%);
-    margin-left: 10px;
     margin-right: 10px;
     max-width: 1325px;
+    padding: 10px;
 } 
 
 .home-view-content h2 {
     font-size: 2.23rem;
     text-transform: none;
     text-align: left;
+    padding: 0px;
 }
 
 .home-view-content a {
@@ -114,4 +119,33 @@ h3 {
     font-weight: 600;
     margin-bottom: 5px;
     text-transform: uppercase;
+}
+
+
+
+
+@media screen and (max-width: 800px) {
+    section > div {
+        flex-direction: column;
+
+    }
+    .left {
+        order: 1;
+    }
+    .right {
+        min-width: auto;
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+    .home-view-content h2 {
+        font-size: 1.9rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .home-view-content h2 {
+        font-size: 1.6rem;
+    }
 }

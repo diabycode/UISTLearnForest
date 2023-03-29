@@ -30,3 +30,44 @@ section > div {
     width: 100%;
     height: 100%;
 }
+
+@media screen and (max-width: 1160px) {
+    .my-player {
+        height: 415px;
+    }
+}
+@media screen and (max-width: 1050px) {
+    .my-player {
+        height: 356px;
+    }
+}
+@media screen and (max-width: 870px) {
+    .my-player {
+        height: 295px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .left {
+        max-width: none;
+    }
+    .my-player {
+        height: 375px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .my-player {
+        height: 410px;
+    }
+}
+@media screen and (max-width: 570px) {
+    .my-player {
+        height: 320px;
+    }
+}
+@media screen and (max-width: 450px) {
+    .my-player {
+        height: 280px;
+    }
+}
