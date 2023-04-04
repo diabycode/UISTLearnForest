@@ -30,6 +30,9 @@ items.forEach(element => {
                     document.querySelector(".right .content").innerHTML = ""
                     document.querySelector(".right .content").appendChild(videoTemplate)
                     window.scrollTo(0, 0)
+                    setTimeout(() => {
+                        videoTemplate.querySelector(".my-player").querySelector("#movie_player > div.ytp-cued-thumbnail-overlay > button").click() 
+                    }, 1500)
                     
                 } else {
                     // get article template

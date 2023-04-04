@@ -34,6 +34,7 @@ INSTALLED_APPS = [
 
     'livereload',
 
+    'accounts',
     'cours',
 ]
 
@@ -106,7 +107,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/3.1/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'fr-FR'
 
 TIME_ZONE = 'UTC'
 
@@ -127,3 +128,6 @@ STATIC_ROOT =  BASE_DIR / 'staticfiles'
 
 MEDIA_ROOT = BASE_DIR / 'mediafiles'
 MEDIA_URL = '/media/'
+
+# USER MODEL
+AUTH_USER_MODEL = 'accounts.UserModel'

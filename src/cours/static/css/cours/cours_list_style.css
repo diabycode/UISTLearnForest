@@ -10,6 +10,15 @@ header {
 
 
 /* title bar -------------------- */
+
+.username {
+    color: #29335C;
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin-left: 20px;
+    text-transform: uppercase;
+}
+
 .title-bar nav ul {
     display: flex;
 }
@@ -39,6 +48,13 @@ header {
 
 .logo span {
     color: #DB2B39;
+}
+
+.login-btn {
+    background-color: #DB2B39;
+    padding: 5px 10px;
+    color: #FBFFF1;
+    font-weight: 500;
 }
 
 
@@ -118,19 +134,32 @@ section {
     cursor: pointer;
     position: relative;
     overflow: hidden;
+    border: 1px solid #b5b5b5;
+}
+.content > .infos {
+    margin-bottom: 10px;
+}
+.course .content p {
+    font-size: 0.88rem;
+    max-height: 84px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+
 }
 .course:hover {
     transform: scale(1.003) translateY(-5px);
-
 }
 
-.course:hover.course > a {
+/* .course:hover.course > a {
     transform: translateX(0px);
-}
+} */
 .course img {
     object-fit: cover;
     width: 100%;
-    height: 300px;
+    height: 225px;
 }
 .course .content {
     padding: 10px;
@@ -139,41 +168,14 @@ section {
     font-size: 1.12rem;
     font-weight: 500;
     margin-bottom: 10px;
+    max-height: 42px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
 }
 
-.course > a svg {
-    /* margin-left: 5px; */
-}
-
-.course > a:hover {
-    background-color: #DB2B39;
-    color: #FBFFF1;
-}
-
-.course > a {
-    height: 50px;
-    width: 50px;
-    border-radius: 50%;
-    background-color: #FBFFF1;
-    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
-
-
-    margin-top: 20px;
-    font-size: 1.12rem;
-    font-weight: 500;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    right: 15px;
-    bottom: 5px;
-    margin-bottom: 10px;
-    padding: 10px;
-
-    transform: translateX(68px);
-    transition: transform 0.2s ease;
-}
 
 
 /* --- responsive ------------ */
@@ -214,6 +216,9 @@ section {
     .home-view-content div p, .home-view-content div p:first-child{
         margin: auto;
         display: inline;
+    }
+    .title-bar nav li:nth-child(2) {
+        display: none;
     }
 }
 

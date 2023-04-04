@@ -1,0 +1,171 @@
+{
+    "courses": [
+        {
+            "model": "cours.cours",
+            "pk": 1,
+            "fields": {
+                "title": "Les bases de python",
+                "description": "Plusieurs variations de Lorem Ipsum peuvent \u00eatre trouv\u00e9es ici ou l\u00e0, mais la majeure partie d'entre elles a \u00e9t\u00e9 alt\u00e9r\u00e9e par l'addition d'humour ou de mots al\u00e9atoires qui ne ressemblent pas une seconde \u00e0 du texte standard. Si vous voulez utiliser un passage du Lorem Ipsum, vous devez \u00eatre s\u00fbr qu'il n'y a rien d'embarrassant cach\u00e9 dans le texte. Tous les g\u00e9n\u00e9rateurs de Lorem Ipsum sur Internet tendent \u00e0 reproduire le m\u00eame extrait sans fin, ce qui fait de lipsum.com le seul vrai g\u00e9n\u00e9rateur de Lorem Ipsum. Iil utilise un dictionnaire de plus de 200 mots latins, en combinaison de plusieurs structures de phrases, pour g\u00e9n\u00e9rer un Lorem Ipsum irr\u00e9prochable. Le Lorem Ipsum ainsi obtenu ne contient aucune r\u00e9p\u00e9tition, ni ne contient des mots farfelus, ou des touches d'humour.",
+                "create_at": "2023-03-16T20:57:08.320Z",
+                "thumbnail": "cours-thumbnails/pexels-pixabay-277390.jpg",
+                "slug": "les-bases-de-python",
+                "author": null
+            }
+        },
+        {
+            "model": "cours.cours",
+            "pk": 2,
+            "fields": {
+                "title": "On sait depuis longtemps",
+                "description": "On sait depuis longtemps que travailler avec du texte lisible et contenant du sens est source de distractions, et emp\u00eache de se concentrer sur la mise en page elle-m\u00eame. L'avantage du Lorem Ipsum sur un texte g\u00e9n\u00e9rique comme 'Du texte. Du texte. Du texte.' est qu'il poss\u00e8de une distribution de lettres plus ou moins normale, et en tout cas comparable avec celle du fran\u00e7ais standard. De nombreuses suites logicielles de mise en page ou \u00e9diteurs de sites Web ont fait du Lorem Ipsum leur faux texte par d\u00e9faut, et une recherche pour 'Lorem Ipsum' vous conduira vers de nombreux sites qui n'en sont encore qu'\u00e0 leur phase de construction. Plusieurs versions sont apparues avec le temps, parfois par accident, souvent intentionnellement (histoire d'y rajouter de petits clins d'oeil, voire des phrases embarassantes).",
+                "create_at": "2023-03-18T13:35:18.662Z",
+                "thumbnail": "cours-thumbnails/marvin-meyer-SYTO3xs06fU-unsplash.jpg",
+                "slug": "on-sait-depuis-longtemps",
+                "author": null
+            }
+        },
+        {
+            "model": "cours.cours",
+            "pk": 3,
+            "fields": {
+                "title": "D'o\u00f9 vient-il?",
+                "description": "Contrairement \u00e0 une opinion r\u00e9pandue, le Lorem Ipsum n'est pas simplement du texte al\u00e9atoire. Il trouve ses racines dans une oeuvre de la litt\u00e9rature latine classique datant de 45 av. J.-C., le rendant vieux de 2000 ans. Un professeur du Hampden-Sydney College, en Virginie, s'est int\u00e9ress\u00e9 \u00e0 un des mots latins les plus obscurs, consectetur, extrait d'un passage du Lorem Ipsum, et en \u00e9tudiant tous les usages de ce mot dans la litt\u00e9rature classique, d\u00e9couvrit la source incontestable du Lorem Ipsum. Il provient en fait des sections 1.10.32 et 1.10.33 du \"De Finibus Bonorum et Malorum\" (Des Supr\u00eames Biens et des Supr\u00eames Maux) de Cic\u00e9ron. Cet ouvrage, tr\u00e8s populaire pendant la Renaissance, est un trait\u00e9 sur la th\u00e9orie de l'\u00e9thique. Les premi\u00e8res lignes du Lorem Ipsum, \"Lorem ipsum dolor sit amet...\", proviennent de la section 1.10.32.",
+                "create_at": "2023-03-18T13:35:44.595Z",
+                "thumbnail": "cours-thumbnails/Capture_d\u00e9cran_2023-03-08_022117__.jpg",
+                "slug": "dou-vient-il",
+                "author": null
+            }
+        },
+        {
+            "model": "cours.cours",
+            "pk": 4,
+            "fields": {
+                "title": "L'extrait standard de Lorem",
+                "description": "L'extrait standard de Lorem Ipsum utilis\u00e9 depuis le XVI\u00e8 si\u00e8cle est reproduit ci-dessous pour les curieux. Les sections 1.10.32 et 1.10.33 du \"De Finibus Bonorum et Malorum\" de Cic\u00e9ron sont aussi reproduites dans leur version originale, accompagn\u00e9e de la traduction anglaise de H. Rackham (1914).",
+                "create_at": "2023-03-18T13:36:07.619Z",
+                "thumbnail": "cours-thumbnails/Frame_4.jpg",
+                "slug": "lextrait-standard-de-lorem",
+                "author": null
+            }
+        },
+        {
+            "model": "cours.cours",
+            "pk": 5,
+            "fields": {
+                "title": "Standard de l'imprimerie depuis les ann\u00e9es 1500, quand un imprimeur anonyme assembla ensemble",
+                "description": "\"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?\"\r\n\r\n\"But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that",
+                "create_at": "2023-03-24T06:09:45.815Z",
+                "thumbnail": "cours-thumbnails/laptop-1205256_1920.jpg",
+                "slug": "standard-de-limprimerie-depuis-les-annees-1500-quand-un-imprimeur-anonyme-assembla-ensemble",
+                "author": 1
+            }
+        }
+    ],
+    "sections": [
+        {
+            "model": "cours.section",
+            "pk": 1,
+            "fields": {
+                "title": "Parties 1: les fondamentaux",
+                "create_at": "2023-03-16T20:58:00.292Z",
+                "cours": 1
+            }
+        },
+        {
+            "model": "cours.section",
+            "pk": 2,
+            "fields": {
+                "title": "Apprendre en tutoriels",
+                "create_at": "2023-03-24T17:37:47.643Z",
+                "cours": 5
+            }
+        },
+        {
+            "model": "cours.section",
+            "pk": 3,
+            "fields": {
+                "title": "D\u00e9couvrez les SpeedArt",
+                "create_at": "2023-03-24T17:38:24.465Z",
+                "cours": 5
+            }
+        },
+        {
+            "model": "cours.section",
+            "pk": 4,
+            "fields": {
+                "title": "Profitez de tout nos templates",
+                "create_at": "2023-03-24T17:39:15.220Z",
+                "cours": 5
+            }
+        }
+    ],
+    "videos": [
+        {
+            "model": "cours.video",
+            "pk": 1,
+            "fields": {
+                "title": "Overlay style manga",
+                "create_at": "2023-03-24T21:45:31.828Z",
+                "section": 2,
+                "video_source": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/YVOKa946ZYw\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen></iframe>",
+                "description": "Je vous offre un tutoriel de comment faire un Overlay (mode portrait) sur Photoshop touch (Android). N'h\u00e9sitez pas \u00e0 me poser toutes vos incompr\u00e9hensions dans les commentaires. \r\n\r\nT'a kiff\u00e9 la vid\u00e9o ? Et bien si c'est le cas alors n'h\u00e9site pas \u00e0 l\u00e2cher un pouce bleu, \u00e0 poster un commentaire en dessous, \u00e0 partager la vid\u00e9o, et \u00e0 t'abonner si ce n'est pas fait !! Oups \ud83d\ude05 j'oubliais, activer aussi la cloche pour \u00eatre notifi\u00e9 lorsque je sors une vid\u00e9o. \u2716)"
+            }
+        },
+        {
+            "model": "cours.video",
+            "pk": 2,
+            "fields": {
+                "title": "Comment faire un logo/avatar style manga",
+                "create_at": "2023-03-24T21:47:39.973Z",
+                "section": 2,
+                "video_source": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/dRRWQqWwV40\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen></iframe>",
+                "description": "Je vous propose aujourd'hui un tutoriel de COMMENT FAIRE UN LOGO STYLE MANGA SUR PHOTOSHOP TOUCH (Android) ! La vid\u00e9o n'est pas comment\u00e9 mais j'ai fais de mon mieux (c\u00f4t\u00e9 montage) pour que vous puissiez comprendre. \r\n\r\nLe pack ressources est un fichier compress\u00e9 (.zip). Pour le d\u00e9compresser il va vous falloir ZArchiver (appli dispo sur le PlayStore).  \r\n\r\nT'a kiff\u00e9 la vid\u00e9o ? Et bien si c'est le cas alors n'h\u00e9site pas \u00e0 l\u00e2cher un pouce bleu, \u00e0 poster un commentaire en dessous, \u00e0 partager la vid\u00e9o, et \u00e0 t'abonner si ce n'est pas fait !! Oups \ud83d\ude05 j'oubliais, activer aussi la cloche pour \u00eatre notifi\u00e9 lorsque je sors une vid\u00e9o. \u2716)"
+            }
+        },
+        {
+            "model": "cours.video",
+            "pk": 3,
+            "fields": {
+                "title": "TUTO BANNI\u00c8RE STYLE MANGA SIMPLE SUR ANDROID",
+                "create_at": "2023-03-24T21:48:54.557Z",
+                "section": 2,
+                "video_source": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/-a8JaMvuXRY\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen></iframe>",
+                "description": "Saluuuut tous le monde  !!\r\nAujourd'hui je vous propose un Tuto gfx \"comment faire une banni\u00e8re YouTube style manga facile\".\r\n\r\nJ'esp\u00e8re que vous allez aimer et si c'est le cas abonnez vous et partagez la vid\u00e9o."
+            }
+        },
+        {
+            "model": "cours.video",
+            "pk": 4,
+            "fields": {
+                "title": "SpeedArt Fortnite banner @Xord (Android)",
+                "create_at": "2023-03-24T21:55:57.159Z",
+                "section": 3,
+                "video_source": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/A3BudUs6Ziw\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen></iframe>",
+                "description": "Je vous propose un SpeedArt Banni\u00e8re fortnite !! \r\n T'a kiff\u00e9 la vid\u00e9o ? Et bien si c'est le cas alors n'h\u00e9site pas \u00e0 l\u00e2cher un pouce bleu, \u00e0 poster un commentaire en dessous, \u00e0 partager la vid\u00e9o, et \u00e0 t'abonner si ce n'est pas fait !! Oups \ud83d\ude05 j'oubliais, activer aussi la cloche pour \u00eatre notifi\u00e9 lorsque je sors une vid\u00e9o."
+            }
+        },
+        {
+            "model": "cours.video",
+            "pk": 5,
+            "fields": {
+                "title": "SpeedArt | Banner Halloween for me (PsTouch/Android)",
+                "create_at": "2023-03-24T21:57:48.216Z",
+                "section": 3,
+                "video_source": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/xvB07-jI2jA\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen></iframe>",
+                "description": "SpeedArt banner Halloween !! (Bient\u00f4t tuto) \r\nT'a kiff\u00e9 la vid\u00e9o ? Et bien si c'est le cas alors n'h\u00e9site pas \u00e0 l\u00e2cher un pouce bleu, \u00e0 poster un commentaire en dessous, \u00e0 partager la vid\u00e9o, et \u00e0 t'abonner si ce n'est pas fait !! Oups \ud83d\ude05 j'oubliais, activer aussi la cloche pour \u00eatre notifi\u00e9 lorsque je sors une vid\u00e9o. \u2716)"
+            }
+        }
+    ],
+    "articles": [
+        {
+            "model": "cours.article",
+            "pk": 2,
+            "fields": {
+                "title": "Le passage de Lorem Ipsum standard, utilis\u00e9 depuis 1500",
+                "create_at": "2023-03-24T22:07:37.931Z",
+                "section": 2,
+                "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\"\r\n\r\nSection 1.10.32 du \"De Finibus Bonorum et Malorum\" de Ciceron (45 av. J.-C.)\r\n\"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?\"\r\n\r\nTraduction de H. Rackham (1914)\r\n\"But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?\""
+            }
+        }
+    ]
+}
