@@ -4,6 +4,7 @@ from django.views.generic import ListView, DetailView
 from django.views import View
 from django.views.generic.base import TemplateResponseMixin
 from django.views.generic.base import ContextMixin
+from django.shortcuts import redirect
 
 from .models import Cours, Video, Article
 
@@ -33,11 +34,12 @@ class CoursDetail(DetailView):
         return context
 
 
-
 class CoursLearn(View, TemplateResponseMixin, ContextMixin):
     template_name = 'cours/cours_learn.html'
 
     def get(self, request, *args, **kwargs):
+        if not request.user.is_authenticated:
+            return redirect('accounts:login')
         return self.render_to_response(self.get_context_data())
 
     def get_context_data(self, **kwargs):
@@ -45,8 +47,6 @@ class CoursLearn(View, TemplateResponseMixin, ContextMixin):
         context['cours'] = Cours.objects.get(slug=self.kwargs['slug'])
         return context
     
-
-
 
 def get(request) -> JsonResponse:
     """Return a list of all courses.
@@ -68,7 +68,6 @@ def get(request) -> JsonResponse:
     })
     return response
     
-
 
 def get_item(request, pk, type) -> JsonResponse:
     items = Video.objects.all() if type == 'video' else Article.objects.all()

@@ -13,6 +13,7 @@ section > div {
 .left {
     max-width: 425px;
     background-color: #E1E1E1;
+    padding-left: 20px;
 }
 
 .right {
